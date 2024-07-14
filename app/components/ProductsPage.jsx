@@ -2,7 +2,7 @@
 import { menClothingItems, womenClothingItems, kidsClothingItems, allProducts } from '../data';
 import Image from 'next/image';
 import Link from 'next/link';
-import useCartStore from '../store/cartStore';
+import useCartStore from '../useCartStore';
 const ProductsPage = () => {
   // Function to handle adding a product to the cart
   const addItem = useCartStore((state) => state.addItem);
