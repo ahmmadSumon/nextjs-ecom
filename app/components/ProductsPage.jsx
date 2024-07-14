@@ -2,12 +2,10 @@
 import { menClothingItems, womenClothingItems, kidsClothingItems, allProducts } from '../data';
 import Image from 'next/image';
 import Link from 'next/link';
+import useCartStore from '../store/cartStore';
 const ProductsPage = () => {
   // Function to handle adding a product to the cart
-  const addToCart = (productId) => {
-    // Implement your logic to add the product to the cart
-    console.log(`Product added to cart: ${productId}`);
-  };
+  const addItem = useCartStore((state) => state.addItem);
 
   return (
     <div className="container mx-auto p-6">
@@ -29,11 +27,11 @@ const ProductsPage = () => {
                     View Details
                   </button>
                 </Link>
-                <Link href={{ pathname: "/singleproduct", query: { id: product.id.toString() } }} key={`${product.id}-link2`}>
-                  <button className="py-1 px-2 rounded   bg-blue-500 text-white hover:bg-blue-700 duration-300">
+                
+                  <button className="py-1 px-2 rounded   bg-blue-500 text-white hover:bg-blue-700 duration-300" onClick={() => addItem(product)}>
                     ADD To Cart
                   </button>
-                </Link>
+                
               </div>
               </div>
             </div>
@@ -59,11 +57,9 @@ const ProductsPage = () => {
                     View Details
                   </button>
                 </Link>
-                <Link href={{ pathname: "/singleproduct", query: { id: product.id.toString() } }} key={`${product.id}-link2`}>
-                  <button className="py-1 px-2 rounded   bg-blue-500 text-white hover:bg-blue-700 duration-300">
+                <button className="py-1 px-2 rounded   bg-blue-500 text-white hover:bg-blue-700 duration-300" onClick={() => addItem(product)}>
                     ADD To Cart
                   </button>
-                </Link>
               </div>
               </div>
             </div>
@@ -89,11 +85,9 @@ const ProductsPage = () => {
                     View Details
                   </button>
                 </Link>
-                <Link href={{ pathname: "/singleproduct", query: { id: product.id.toString() } }} key={`${product.id}-link2`}>
-                  <button className="py-1 px-2 rounded   bg-blue-500 text-white hover:bg-blue-700 duration-300">
+                <button className="py-1 px-2 rounded   bg-blue-500 text-white hover:bg-blue-700 duration-300" onClick={() => addItem(product)}>
                     ADD To Cart
                   </button>
-                </Link>
               </div>
               </div>
             </div>
