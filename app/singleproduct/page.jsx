@@ -150,7 +150,7 @@ const SingleProduct = ({ searchParams }) => {
                 <h2 className="text-xl font-semibold mb-2">{product.name}</h2>
                 <p className="text-gray-600 mb-4">{product.description}</p>
                 <p className="text-lg font-bold">${product.price.toFixed(2)}</p>
-                <div className="flex mt-5 justify-between gap-4 flex-col lg:flex-row">
+                <div className="flex mt-5 justify-between gap-4 ">
                 <Link href={{ pathname: "/singleproduct", query: { id: product.id.toString() } }} key={`${product.id}-link1`}>
                   <button className="py-1 px-2 rounded  bg-blue-500 text-white hover:bg-blue-700 duration-300">
                     View Details
