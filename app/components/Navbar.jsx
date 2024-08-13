@@ -125,7 +125,15 @@ const Navbar = () => {
               >
                 Portfolio
               </a>
-              <li className="hover:text-blue-600 transition-colors duration-300">Blog</li>
+              <a
+                href="https://shohid-nextjs.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600 transition-colors duration-300"
+                onClick={closeMenu}
+              >
+                Blog
+              </a>
               <Link href="/about" onClick={closeMenu}>
                 <li className="hover:text-blue-600 transition-colors duration-300">About Shop</li>
               </Link>
