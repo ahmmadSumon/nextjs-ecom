@@ -3,6 +3,8 @@ import { menClothingItems, womenClothingItems, kidsClothingItems } from '../data
 import Image from 'next/image';
 import Link from 'next/link';
 import useCartStore from '../useCartStore';
+import Herosection from '../components/Herosection';
+import AllCategories from '../components/AllCategories';
 
 const ProductsPage = () => {
   const addItem = useCartStore((state) => state.addItem);
@@ -20,7 +22,7 @@ const ProductsPage = () => {
   };
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 py-16">
       <section className="my-12">
         <h1 className="text-3xl font-bold text-center mb-8">Men's Products</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -51,8 +53,10 @@ const ProductsPage = () => {
           ))}
         </div>
       </section>
-
-      <section className="my-12">
+  <div>
+    <AllCategories/>
+  </div>
+      <section className="my-12 ">
         <h1 className="text-3xl font-bold text-center mb-8">Women's Products</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {womenClothingItems.map((product) => (
@@ -82,7 +86,9 @@ const ProductsPage = () => {
           ))}
         </div>
       </section>
-
+      <div>
+        <Herosection/>
+      </div>
       <section className="my-12">
         <h1 className="text-3xl font-bold text-center mb-8">Kids' Products</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -6,16 +6,16 @@ import missionPhoto from '../../public/asset/products/sportshoodie.jpg'; // Repl
 
 const AboutUs = () => {
   return (
-    <div className="bg-gray-50 text-gray-800 py-20 px-6  lg:px-32">
+    <div className="bg-gray-50 text-gray-800 py-28 px-6  lg:px-32">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl lg:text-5xl font-bold text-center mb-12 text-black-600">About Us</h1>
 
         <section className="mb-16">
           <div className="flex flex-col lg:flex-row items-center gap-8">
-            <div className="w-full lg:w-1/2">
+            <div className="w-full lg:w-1/3">
               <Image src={teamPhoto} alt="Our Team" className="w-full h-auto rounded-lg shadow-lg" />
             </div>
-            <div className="w-full lg:w-1/2">
+            <div className="w-full lg:w-1/3">
               <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
               <p className="text-lg leading-relaxed mb-4">
                 Founded in <span className="font-semibold">[Year]</span>, [Your Shop Name] started with a simple goal: to bring the latest trends and must-have items right to your doorstep. What began as a small passion project has now grown into a thriving online marketplace, serving thousands of happy customers across [mention regions].

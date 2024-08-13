@@ -60,7 +60,7 @@ const Navbar = () => {
           <FiMenu className="text-3xl cursor-pointer" onClick={toggleMenu} />
         </div>
 
-        <ul className="hidden lg:flex items-center gap-8 uppercase text-sm font-semibold">
+        <ul className="hidden lg:flex items-center gap-8 uppercase text-gl font-semibold">
           <Link href="/" onClick={closeMenu}>
             <li className="navbarLi hover:text-blue-600 transition-colors duration-300">Home</li>
           </Link>
@@ -111,7 +111,7 @@ const Navbar = () => {
 
         {isMenuOpen && (
           <div className="lg:hidden absolute z-10 left-0 top-20 w-full bg-white shadow-lg border-t-[1px] border-gray-300 text-black transition-all duration-300">
-            <ul className="max-w-screen-2xl mx-auto px-4 py-4 uppercase text-sm font-semibold">
+            <ul className="max-w-screen-2xl mx-auto px-4 py-4 uppercase text-xl font-semibold">
               <Link href="/" onClick={closeMenu}>
                 <li className="hover:text-blue-600 transition-colors duration-300">Home</li>
               </Link>
@@ -124,6 +124,7 @@ const Navbar = () => {
               <Link href="/kids" onClick={closeMenu}>
                 <li className="hover:text-blue-600 transition-colors duration-300">Kids</li>
               </Link>
+              <li>
               <a
                 href="https://port-folio-next-js-lime.vercel.app/"
                 target="_blank"
@@ -132,7 +133,9 @@ const Navbar = () => {
                 onClick={closeMenu}
               >
                 Portfolio
-              </a>
+              </a> 
+              </li>
+              <li>
               <a
                 href="https://shohid-nextjs.vercel.app/"
                 target="_blank"
@@ -142,6 +145,9 @@ const Navbar = () => {
               >
                 Blog
               </a>
+              </li>
+       
+             
               <Link href="/about" onClick={closeMenu}>
                 <li className="hover:text-blue-600 transition-colors duration-300">About Shop</li>
               </Link>

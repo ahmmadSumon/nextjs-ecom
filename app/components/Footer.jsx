@@ -32,7 +32,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/about">
+                                <Link href="/products">
                                     <span className="hover:text-gray-400 cursor-pointer">Shop</span>
                                 </Link>
                             </li>
@@ -53,22 +53,22 @@ const Footer = () => {
                     <div className="w-full md:w-1/3">
                         <h3 className="text-lg font-bold mb-4">Follow Us</h3>
                         <div className="flex space-x-4">
-                            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" passHref>
+                            <Link href="https://www.facebook.com/arifahmed.sumon" target="_blank" rel="noopener noreferrer" passHref>
                                 <span className="text-2xl hover:text-gray-400 cursor-pointer" aria-label="Facebook">
                                     <FaFacebook />
                                 </span>
                             </Link>
-                            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" passHref>
+                            <Link href="https://www.facebook.com/arifahmed.sumon" target="_blank" rel="noopener noreferrer" passHref>
                                 <span className="text-2xl hover:text-gray-400 cursor-pointer" aria-label="Twitter">
                                     <FaTwitter />
                                 </span>
                             </Link>
-                            <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" passHref>
+                            <Link href="https://www.facebook.com/arifahmed.sumon" target="_blank" rel="noopener noreferrer" passHref>
                                 <span className="text-2xl hover:text-gray-400 cursor-pointer" aria-label="Instagram">
                                     <FaInstagram />
                                 </span>
                             </Link>
-                            <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer" passHref>
+                            <Link href="https://www.facebook.com/arifahmed.sumon" target="_blank" rel="noopener noreferrer" passHref>
                                 <span className="text-2xl hover:text-gray-400 cursor-pointer" aria-label="YouTube">
                                     <FaYoutube />
                                 </span>
