@@ -6,7 +6,7 @@ import missionPhoto from '../../public/asset/products/sportshoodie.jpg'; // Repl
 
 const AboutUs = () => {
   return (
-    <div className="bg-gray-50 text-gray-800 py-16 px-6 lg:px-32">
+    <div className="bg-gray-50 text-gray-800 py-20 px-6  lg:px-32">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl lg:text-5xl font-bold text-center mb-12 text-black-600">About Us</h1>
 
