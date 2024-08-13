@@ -67,9 +67,8 @@ const Navbar = () => {
             placeholder="Pages"
             data={[
               { name: "Mens", link: "/mens" },
-              { name: "Womens", link: "/womens" },
-              { name: "Jewelery", link: "/jewelery" },
-              { name: "Electronics", link: "/electronics" },
+                  { name: "Womens", link: "/womens" },
+                  { name: "Kids", link: "/kids" },
             ]}
           />
           
@@ -113,8 +112,8 @@ const Navbar = () => {
                 data={[
                   { name: "Mens", link: "/mens" },
                   { name: "Womens", link: "/womens" },
-                  { name: "Jewelery", link: "/jewelery" },
-                  { name: "Electronics", link: "/electronics" },
+                  { name: "Kids", link: "/kids" },
+                 
                 ]}
               />
               <li className="navbarLi hover:text-blue-600 transition-colors duration-300">Services</li>
