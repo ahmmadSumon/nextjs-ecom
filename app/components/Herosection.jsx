@@ -18,7 +18,7 @@ const Herosection = () => {
     <>
       <div className="container-fluid flex flex-col justify-center pt-20 md:py-28 items-center">
         {/* Carousel section */}
-        <div className="mt-5 w-full h-96 md:h-auto overflow-hidden"> {/* Set width to full screen */}
+        <div className="mt-5 w-full  md:h-auto overflow-hidden"> {/* Set width to full screen */}
           <Carousel
             plugins={[
                 Autoplay({

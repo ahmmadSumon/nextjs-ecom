@@ -11,9 +11,9 @@ import img5 from "../../public/asset/carousel/10.jpg";
 const categories = [
   { name: 'Mens', image: img1, link: '/mens' },
   { name: 'Womens', image: img2, link: '/womens' },
-  { name: 'Electronics', image: img3, link: '/electronics' },
-  { name: 'Jewelery', image: img4, link: '/jewelery' },
-  { name: 'Kids', image: img5, link: '' },
+  { name: 'Kids', image: img3, link: '/electronics' },
+  { name: 'Mens', image: img4, link: '/mens' },
+  { name: 'Kids', image: img5, link: '/kids' },
 ];
 
 const AllCategories = () => {
@@ -36,7 +36,7 @@ const AllCategories = () => {
   };
 
   return (
-    <>
+    <div className='my-5'>
    <h2 className='text-3xl font-bold text-center mb-8'>New Arraivals</h2>
     <div className="flex justify-center items-center pt-7" style={{ whiteSpace: 'nowrap', overflowX: 'hidden', overflowY: 'hidden', position: 'relative', zIndex: 10 }}>
      
@@ -98,7 +98,7 @@ const AllCategories = () => {
         }
       `}</style>
     </div>
-    </>
+    </div>
   );
 };
 
