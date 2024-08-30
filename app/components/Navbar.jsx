@@ -37,14 +37,14 @@ const Navbar = () => {
 
   return (
     <div
-      className={`w-full h-20 lg:h-24 border-b-[1px] border-gray-200 text-black fixed top-0 bg-white z-50 transition-all duration-300 ${
+      className={`bg-luxury-gradient w-full h-20 lg:h-24 border-b-[1px] border-gray-200 text-black fixed top-0 font-extrabold bg-white z-50 transition-all duration-300 ${
         isScrolled ? "shadow-md" : ""
       }`}
     >
-      <div className="max-w-screen-2xl h-full mx-auto px-4 flex items-center justify-between">
+      <div className="max-w-screen-2xl bg-luxury-gradient h-full mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/">
-            <Image className="w-[230px] h-auto" src={logo} alt="Logo" />
+            <Image className="w-[230px] h-auto rounded-lg overflow-hidden" src={logo} alt="Logo" />
           </Link>
         </div>
 
@@ -62,7 +62,7 @@ const Navbar = () => {
 
         <ul className="hidden lg:flex items-center gap-8 uppercase text-gl font-semibold">
           <Link href="/" onClick={closeMenu}>
-            <li className="navbarLi hover:text-blue-600 transition-colors duration-300">Home</li>
+            <li className="navbarLi hover:text-white transition-colors duration-300">Home</li>
           </Link>
           <DropDown
             placeholder="Pages"
@@ -76,7 +76,7 @@ const Navbar = () => {
             href="https://port-folio-next-js-lime.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="navbarLi hover:text-blue-600 transition-colors duration-300"
+            className="navbarLi hover:text-white transition-colors duration-300"
           >
             Portfolio
           </a>
@@ -84,18 +84,18 @@ const Navbar = () => {
                 href="https://shohid-nextjs.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-600 transition-colors duration-300"
+                className="hover:text-white transition-colors duration-300"
                 onClick={closeMenu}
               >
                 Blog
               </a>
           <Link href="/about" onClick={closeMenu}>
-            <li className="navbarLi hover:text-blue-600 transition-colors duration-300">About Shop</li>
+            <li className="navbarLi hover:text-white transition-colors duration-300">About Shop</li>
           </Link>
         </ul>
 
         <div className="hidden lg:flex gap-8 items-center">
-          <BsSearch className="text-xl hover:text-blue-600 transition-colors duration-300" />
+          <BsSearch className="text-xl hover:text-white transition-colors duration-300" />
           <div className="relative">
             <Link href="/cart">
               <CiShoppingCart className="text-3xl" />
@@ -104,32 +104,32 @@ const Navbar = () => {
               </span>
             </Link>
           </div>
-          <button className="py-3 px-10 bg-blue-500 text-white uppercase text-sm font-semibold rounded-md hover:bg-blue-600 transition-colors duration-300">
+          <button className=" btn-gradient py-3 px-10 text-black uppercase text-sm font-semibold rounded-md  transition-colors duration-300">
             Login
           </button>
         </div>
 
         {isMenuOpen && (
-          <div className="lg:hidden absolute z-10 left-0 top-20 w-full bg-white shadow-lg border-t-[1px] border-gray-300 text-black transition-all duration-300">
+          <div className="lg:hidden absolute z-10 left-0 top-20 w-full bg-luxury-gradient shadow-lg border-t-[1px] border-gray-300 text-black transition-all duration-300">
             <ul className="max-w-screen-2xl mx-auto px-4 py-4 uppercase text-xl font-semibold">
               <Link href="/" onClick={closeMenu}>
-                <li className="hover:text-blue-600 transition-colors duration-300">Home</li>
+                <li className="hover:text-white transition-colors duration-300">Home</li>
               </Link>
               <Link href="/mens" onClick={closeMenu}>
-                <li className="hover:text-blue-600 transition-colors duration-300">Mens</li>
+                <li className="hover:text-white  transition-colors duration-300">Mens</li>
               </Link>
               <Link href="/womens" onClick={closeMenu}>
-                <li className="hover:text-blue-600 transition-colors duration-300">Womens</li>
+                <li className="hover:text-white  transition-colors duration-300">Womens</li>
               </Link>
               <Link href="/kids" onClick={closeMenu}>
-                <li className="hover:text-blue-600 transition-colors duration-300">Kids</li>
+                <li className="hover:text-white  transition-colors duration-300">Kids</li>
               </Link>
               <li>
               <a
                 href="https://port-folio-next-js-lime.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-600 transition-colors duration-300"
+                className="hover:text-white transition-colors duration-300"
                 onClick={closeMenu}
               >
                 Portfolio
@@ -140,7 +140,7 @@ const Navbar = () => {
                 href="https://shohid-nextjs.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-600 transition-colors duration-300"
+                className="hover:text-white transition-colors duration-300"
                 onClick={closeMenu}
               >
                 Blog
@@ -149,7 +149,7 @@ const Navbar = () => {
        
              
               <Link href="/about" onClick={closeMenu}>
-                <li className="hover:text-blue-600 transition-colors duration-300">About Shop</li>
+                <li className="hover:text-white transition-colors duration-300">About Shop</li>
               </Link>
             </ul>
           </div>

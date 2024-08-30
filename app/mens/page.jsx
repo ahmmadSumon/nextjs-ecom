@@ -22,7 +22,7 @@ const ProductsPage = () => {
   return (
     <div className="container mx-auto p-6 py-20">
       <section className="my-12">
-        <h1 className="text-3xl font-bold text-center mb-8">Men's Products</h1>
+        <h1 className="text-3xl font-bold text-slate-700 text-center mb-8">Men's Products</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {menClothingItems.map((product) => (
             <div key={product.id} className="product-card bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition-shadow duration-300">
@@ -35,12 +35,12 @@ const ProductsPage = () => {
                 <p className="text-lg font-bold">${product.price.toFixed(2)}</p>
                 <div className="flex justify-between mt-5 gap-4">
                 <Link href={`/products/${product.id}`}>
-                    <button className="py-1 px-2 rounded bg-blue-500 text-white hover:bg-blue-700 duration-300">
+                    <button className="btn-gradient duration-300">
                       View Details
                     </button>
                   </Link>
                   <button 
-                    className="py-1 px-2 rounded bg-blue-500 text-white hover:bg-blue-700 duration-300"
+                    className="btn-gradient duration-300"
                     onClick={() => handleAddToCart(product)}
                   >
                     Add To Cart

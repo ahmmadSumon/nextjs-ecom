@@ -37,7 +37,7 @@ const AllCategories = () => {
 
   return (
     <div className='my-5'>
-   <h2 className='text-3xl font-bold text-center mb-8'>New Arraivals</h2>
+   <h2 className='text-3xl font-bold text-slate-700 text-center mb-8'>New Arraivals</h2>
     <div className="flex justify-center items-center pt-7" style={{ whiteSpace: 'nowrap', overflowX: 'hidden', overflowY: 'hidden', position: 'relative', zIndex: 10 }}>
      
       <div 

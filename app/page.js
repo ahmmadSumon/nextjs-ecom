@@ -5,7 +5,7 @@ import ProductsPage from './products/page.jsx'
 import AboutUs from './about/page'
 const page = () => {
   return (
-    <div>
+    <div className="bg-[#FACCCE]">
       <Herosection/>
       <AllCategories/>
       <ProductsPage/>

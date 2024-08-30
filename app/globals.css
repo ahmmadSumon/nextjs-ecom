@@ -2,3 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Define custom animations */
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Apply a multi-layered gradient background with animation */
+.bg-luxury-gradient {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+  background-size: 300% 300%;
+  animation: gradientBackground 8s ease infinite;
+}
+.btn-gradient {
+    @apply inline-flex items-center justify-center px-8 py-4 font-bold text-white rounded-full shadow-lg;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a6c1ee);
+    background-size: 200% 200%;
+    animation: gradientBackground 4s ease infinite;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+     color: black;;
+  }
+  
+  .btn-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
