@@ -1,12 +1,12 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
-import teamPhoto from '../../public/asset/products/sportshoodie.jpg'; // Replace with your image path
-import missionPhoto from '../../public/asset/products/sportshoodie.jpg'; // Replace with your image path
+import teamPhoto from '../../public/asset/carousel/6.jpg'; // Replace with your image path
+import missionPhoto from '../../public/asset/carousel/6.jpg'; // Replace with your image path
 
 const AboutUs = () => {
   return (
-    <div className="text-gray-900 py-16 px-8 lg:px-32">
+    <div className="text-gray-900 py-16 px-8 lg:py-32">
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
         <section className="text-center mb-16">
@@ -39,15 +39,15 @@ const AboutUs = () => {
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">What We Offer</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-white rounded-lg shadow-lg">
+            <div className="text-center p-6  bg-[#f7cfe186] rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold mb-4">Quality Products</h3>
               <p className="text-gray-700">We source only the finest products from trusted suppliers to ensure that our customers receive the best quality.</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-lg shadow-lg">
+            <div className="text-center p-6  bg-[#f7cfe186] rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold mb-4">Affordable Prices</h3>
               <p className="text-gray-700">Our competitive pricing allows you to shop without breaking the bank, offering the best value for your money.</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-lg shadow-lg">
+            <div className="text-center p-6  bg-[#f7cfe186] rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold mb-4">Excellent Service</h3>
               <p className="text-gray-700">Our dedicated customer service team is here to ensure a smooth and enjoyable shopping experience for you.</p>
             </div>
@@ -76,15 +76,15 @@ const AboutUs = () => {
         <section className="mb-16 text-center">
           <h2 className="text-3xl font-bold mb-8">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-white rounded-lg shadow-lg">
+            <div className="text-center p-6  bg-[#f7cfe186] rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold mb-4">Integrity</h3>
               <p className="text-gray-700">We operate with honesty and transparency in everything we do.</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-lg shadow-lg">
+            <div className="text-center p-6  bg-[#f7cfe186] rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold mb-4">Innovation</h3>
               <p className="text-gray-700">We continuously strive to bring you the latest and most innovative products.</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-lg shadow-lg">
+            <div className="text-center p-6  bg-[#f7cfe186] rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold mb-4">Customer First</h3>
               <p className="text-gray-700">Your satisfaction is our priority. We listen to your feedback and always aim to improve.</p>
             </div>
@@ -101,7 +101,7 @@ const AboutUs = () => {
             href="https://www.instagram.com/yourshop"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block py-3 px-8 bg-gradient-to-r from-purple-500 to-blue-500 text-white text-lg font-semibold rounded-full transition-transform duration-300 hover:scale-105"
+            className="inline-block btn-gradient duration-300"
           >
             Follow Us
           </a>
