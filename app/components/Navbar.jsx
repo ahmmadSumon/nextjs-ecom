@@ -73,7 +73,7 @@ const Navbar = () => {
             ]}
           />
           <a
-            href="https://port-folio-next-js-lime.vercel.app/"
+            href="https://sumon-portfolio-five.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="navbarLi hover:text-white transition-colors duration-300"
@@ -126,7 +126,7 @@ const Navbar = () => {
               </Link>
               <li>
               <a
-                href="https://port-folio-next-js-lime.vercel.app/"
+                href="https://sumon-portfolio-five.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors duration-300"
